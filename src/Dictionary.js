@@ -13,6 +13,7 @@ export default function Dictionary() {
         e.preventDefault();
         alert(`Searching for ${keyword} definition`);
 
+        //documantation: https://dictionaryapi.dev/
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         console.log(apiUrl);
         axios.get(apiUrl).then(handleResponse);

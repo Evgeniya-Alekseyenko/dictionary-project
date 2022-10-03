@@ -1,3 +1,21 @@
 .container {
     height: 95vh;
 }
+.head {
+    color: #4682b4;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px black, 2px 2px 1px black;
+}
+.fa-search {
+    padding: 3px;
+}
+.fa-search {
+    color: #000;
+}
+.ms-n5 {
+    margin-left: -40px;
+}
+.fw-light {
+    margin-top: 30px;
+}

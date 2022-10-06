@@ -1,12 +1,13 @@
 import React from 'react';
 import './Meaning.css';
+import Synonyms from './Synonyms';
 
 export default function Meaning(props) {
     console.log(props.meaning);
     return (
         <div className='meaning'>
             <div className='heading-meaning-box'>
-                <i class='fa-solid fa-earth-americas'></i>
+                <i className='fa-solid fa-earth-americas'></i>
                 <h3 className='heading-meaning'>
                     {props.meaning.partOfSpeech}
                 </h3>
@@ -14,11 +15,18 @@ export default function Meaning(props) {
             {props.meaning.definitions.map(function (definition, index) {
                 return (
                     <div className='definition-list' key={index}>
-                        {/* <p className='border'>{definition.synonyms}</p> */}
+                        <div>
+                            <Synonyms synonyms={definition.synonyms} />{' '}
+                        </div>
                         <ul>
                             <li>
-                                <p className='definitions'>
-                                    <span>{definition.definition}</span>
+                                <div className='definitions'>
+                                    <div className='definitions-text'>
+                                        <span className='definition-title'>
+                                            Definition:
+                                        </span>
+                                        {definition.definition}
+                                    </div>
                                     <br />
                                     {definition.example ? (
                                         <div>
@@ -34,7 +42,7 @@ export default function Meaning(props) {
                                             {definition.example}
                                         </em>
                                     )}
-                                </p>
+                                </div>
                             </li>
                         </ul>
                     </div>

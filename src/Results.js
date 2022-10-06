@@ -9,19 +9,19 @@ export default function Results(props) {
         return (
             <div className='results'>
                 <div className='heading-box'>
-                    <i class='fa-solid fa-feather'></i>
+                    <i className='fa-solid fa-feather'></i>
                     <h2 className='heading'>{props.results.word}</h2>
                 </div>
                 <section className='phonetic-box'>
                     <div className='phonetic-heading'>
-                        <i class='fa-solid fa-music'></i>
+                        <i className='fa-solid fa-music'></i>
                         <h2 className='word'>{props.results.word}</h2>
                     </div>
                     {props.results.phonetics.map((el, index) => {
                         return (
                             <div className='phonetic' key={index}>
                                 <Phonetics data={el} />
-                                <p>{el.text}</p>
+                                <span>{el.text}</span>
                             </div>
                         );
                     })}

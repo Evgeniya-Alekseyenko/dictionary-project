@@ -20,6 +20,17 @@
     color: black;
     margin-left: 20px;
 }
+.definition-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.definition-title:hover {
+    color: #4682b4;
+}
+.definitions-text {
+    color: black;
+}
 .heading-meaning-box {
     display: flex;
     text-align: center;

@@ -17,10 +17,10 @@ export default function Meaning(props) {
             </div>
             {props.meaning.definitions.map(function (definition, index) {
                 return (
-                    <div className='definition-list' key={index}>
-                        {/* <div>
-                            <Synonyms synonyms={definition.synonyms} />
-                        </div> */}
+                    <div
+                        className='definition-list border shadow rounded m-4'
+                        key={index}
+                    >
                         <ul>
                             <li>
                                 <div className='definitions'>

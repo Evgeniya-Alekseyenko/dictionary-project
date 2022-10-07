@@ -1,5 +1,7 @@
 .container {
     height: 95vh;
+    background-color: #fff;
+    overflow: auto;
 }
 .head {
     color: #4682b4;

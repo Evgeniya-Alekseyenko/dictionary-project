@@ -3,7 +3,6 @@ import './Meaning.css';
 import Synonyms from './Synonyms';
 
 export default function Meaning(props) {
-    console.log(props.meaning);
     return (
         <div className='meaning'>
             <div className='heading-meaning-box'>

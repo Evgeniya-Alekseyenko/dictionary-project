@@ -34,8 +34,10 @@
 }
 .definitions-text {
     color: black;
+    padding: 10px;
 }
 .heading-meaning-box {
+    margin-top: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -51,4 +53,5 @@
 }
 .example-text {
     font-size: 15px;
+    padding: 10px;
 }

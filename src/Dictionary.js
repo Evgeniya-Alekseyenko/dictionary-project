@@ -75,20 +75,18 @@ export default function Dictionary(props) {
                                         What word do you want to look up?
                                     </div>
                                 </Bounce>
-                                <div className='input-group'>
-                                    <input
-                                        className='form-control border-end-0 border-dark rounded-pill'
-                                        type='search'
-                                        onChange={handleKeywordChange}
-                                    />
-                                    <span className='input-group-append'>
-                                        <button
-                                            className='btn btn-outline-primary border-dark bg-light border-bottom-1 border rounded-pill ms-n5'
-                                            type='button'
-                                        >
-                                            <i className='fa fa-search'></i>
-                                        </button>
-                                    </span>
+                                <div class='input-group'>
+                                    <div class='col mx-auto'>
+                                        <div class='input-group'>
+                                            <input
+                                                onChange={handleKeywordChange}
+                                                class='form-control border rounded-pill'
+                                                type='search'
+                                                placeholder='Search...'
+                                                id='example-search-input'
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

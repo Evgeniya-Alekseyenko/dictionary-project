@@ -1,3 +1,41 @@
-.signature {
+::-webkit-scrollbar {
+    width: 24px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #ffe4e1;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #4682b4;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 3px black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+.footer-link a {
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.name_link {
+    padding-left: 10px;
     text-shadow: 2px 2px 2px white, 2px 2px 1px white;
+}
+.footer-link img:hover {
+    background-color: #4682b4;
+    border-radius: 100%;
+}
+.link {
+    font-weight: bold;
+}
+.link:hover {
+    color: #4682b4;
+    text-decoration: underline;
+}
+@media (max-width: 400px) {
+    .footer-link {
+        font-size: 12px;
+    }
 }

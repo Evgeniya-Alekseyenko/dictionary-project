@@ -7,24 +7,3 @@ body {
     background-color: #ffe4e1;
     font-family: Alkalami;
 }
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
-}
-::-webkit-scrollbar {
-    width: 24px; /* ширина для вертикального скролла */
-    height: 8px; /* высота для горизонтального скролла */
-    background-color: #ffe4e1;
-}
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb {
-    background-color: #4682b4;
-    border-radius: 9em;
-    box-shadow: inset 1px 1px 3px black;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: black;
-}

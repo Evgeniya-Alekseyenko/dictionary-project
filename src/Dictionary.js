@@ -6,6 +6,13 @@ import './Dictionary.css';
 import Results from './Results';
 import Photos from './Photos';
 
+const Bounce = styled.div`
+    animation: 4s ${keyframes`${bounce}`} infinite;
+`;
+const ZoomInUp = styled.div`
+    animation: 4s ${keyframes`${zoomInUp}`};
+`;
+
 export default function Dictionary(props) {
     let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults] = useState(null);
@@ -43,13 +50,6 @@ export default function Dictionary(props) {
         setKeyword(event.target.value);
     }
 
-    const Bounce = styled.div`
-        animation: 4s ${keyframes`${bounce}`} infinite;
-    `;
-    const ZoomInUp = styled.div`
-        animation: 4s ${keyframes`${zoomInUp}`};
-    `;
-
     function load() {
         setLoaded(true);
         search();
@@ -61,26 +61,21 @@ export default function Dictionary(props) {
                 <div className='container shadow-lg mt-3 py-4 rounded'>
                     <form onSubmit={handleSubmit}>
                         <ZoomInUp>
-                            {' '}
-                            <h1 className='text-center m-4 head'>
-                                {' '}
-                                DICTIONARY
-                            </h1>
+                            <h1 className='text-center m-4 head'>DICTIONARY</h1>
                         </ZoomInUp>
                         <div className='row'>
                             <div className='col-md-5 mx-auto'>
                                 <Bounce>
-                                    {' '}
                                     <div className='small fw-light'>
                                         What word do you want to look up?
                                     </div>
                                 </Bounce>
-                                <div class='input-group'>
-                                    <div class='col mx-auto'>
-                                        <div class='input-group'>
+                                <div className='input-group'>
+                                    <div className='col mx-auto'>
+                                        <div className='input-group'>
                                             <input
                                                 onChange={handleKeywordChange}
-                                                class='form-control border rounded-pill'
+                                                className='form-control border rounded-pill'
                                                 type='search'
                                                 placeholder='Search...'
                                                 id='example-search-input'

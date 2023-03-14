@@ -15,7 +15,7 @@ function App() {
                     alt='github icon'
                 />
                 <a
-                    href='https://github.com/Evgeniya-Alekseyenko/weather-react.git'
+                    href='https://github.com/Evgeniya-Alekseyenko/dictionary-project'
                     className='link-git'
                     target='_blank'
                     rel='noreferrer'
